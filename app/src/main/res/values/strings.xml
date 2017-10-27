@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Oasis 2017</string>
+    <string name="title_activity_details">DetailsActivity</string>
+    <string name="answer">ANSWER</string>
+    <string name="answer_low">answer</string>
+    <string name="connect">CONNECT</string>
+    <string name="years">years</string>
+    <string name="asked">asked</string>
+    <string name="profile">"'s Profile"</string>
+
+    <string name="transition_avatar_border" translatable="false">avatar_border</string>
+    <string name="transition_card" translatable="false">card</string>
+    <string name="transition_background" translatable="false">background</string>
+    <string name="transition_list" translatable="false">list</string>
+
+    <string name="details_connect">CONNECT</string>
+    <string name="details_close">CLOSE</string>
+    <string name="details_details">DETAILS</string>
+    <string name="initializing_faker">Initializing Faker...</string>
+    <string name="about">Snatches of whatever your teacher’s been droning on about for the past hour, would weave in and out of your fantasies, to be interrupted when she hurls her chalk at you.\n\n
+
+Hours made to stand outside the class and silly impositions would follow.\n\n
+
+Middle school was dumb. Your attention span hasn\'t really changed much here in college though, has it? It’s only fair. Who wouldn’t be wrestling orcs at Amon Hen, or duelling the Dark Lord in the Battle of Hogwarts? Perhaps battle in the Lannisters’ army, in their fight to keep the Iron throne, all the while ignoring the lecturer as he tries to give you an actual future? Yeah, we thought so.\n\n
+
+Join us this Oasis ‘17, the 46th edition of BITS Pilani’s annual cultural festival from the 31st October to the 4th November, with some of the biggest music acts such as Parikrama and Amit Trivedi, and public figures such as Salman Khurshid and Kiran Bedi all a part of its proud history. From games, to mouth watering food stalls and exhilarating concerts, we promise them all.\n\n
+
+Join us, as we bring to life these Realms of Fiction, from Gotham and Winterfell to Avalon and Vice City.\n\n
+
+Oasis ‘17. Bigger than ever.\n\n</string>
+</resources>
