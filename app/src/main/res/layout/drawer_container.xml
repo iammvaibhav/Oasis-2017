@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="typeface"
+            type="android.graphics.Typeface"/>
+    </data>
+<FrameLayout
+    android:id="@+id/drawerContainer"
+    android:layout_width="280dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:id="@+id/drawerContainerBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#202020">
+
+            <ImageView
+                android:id="@+id/oasisLogo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="30dp"/>
+        </FrameLayout>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/emergency"
+            android:layout_width="237dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="EMERGENCY"
+            android:textColor="#202020"
+            android:textSize="@dimen/navbarItemSize"
+            android:typeface="@{typeface}"
+            app:layout_constraintStart_toStartOf="@+id/about"
+            app:layout_constraintTop_toBottomOf="@+id/about" />
+
+        <TextView
+            android:id="@+id/n2o_voting"
+            android:layout_width="237dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="STANDUP SOAPBOX VOTING"
+            android:textColor="#202020"
+            android:textSize="@dimen/navbarItemSize"
+            android:typeface="@{typeface}"
+            app:layout_constraintStart_toStartOf="@+id/settings"
+            app:layout_constraintTop_toBottomOf="@+id/settings" />
+
+        <TextView
+            android:id="@+id/settings"
+            android:layout_width="237dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="SETTINGS"
+            android:textColor="#202020"
+            android:textSize="@dimen/navbarItemSize"
+            android:typeface="@{typeface}"
+            app:layout_constraintStart_toStartOf="@+id/notifications"
+            app:layout_constraintTop_toBottomOf="@+id/notifications" />
+
+        <TextView
+            android:id="@+id/about"
+            android:layout_width="238dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="ABOUT"
+            android:textColor="#202020"
+            android:textSize="@dimen/navbarItemSize"
+            android:typeface="@{typeface}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/userProfile"
+            android:layout_width="237dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="USER PROFILE"
+            android:textColor="#202020"
+            android:textSize="@dimen/navbarItemSize"
+            android:typeface="@{typeface}"
+            app:layout_constraintStart_toStartOf="@+id/emergency"
+            app:layout_constraintTop_toBottomOf="@+id/emergency" />
+
+        <TextView
+            android:id="@+id/contact"
+            android:layout_width="237dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="CONTACT"
+            android:textColor="#202020"
+            android:textSize="@dimen/navbarItemSize"
+            android:typeface="@{typeface}"
+            app:layout_constraintStart_toStartOf="@+id/userProfile"
+            app:layout_constraintTop_toBottomOf="@+id/userProfile" />
+
+        <TextView
+            android:id="@+id/sponsors"
+            android:layout_width="238dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="SPONSORS"
+            android:textColor="#202020"
+            android:textSize="@dimen/navbarItemSize"
+            android:typeface="@{typeface}"
+            app:layout_constraintStart_toStartOf="@+id/contact"
+            app:layout_constraintTop_toBottomOf="@+id/contact" />
+
+        <TextView
+            android:id="@+id/developers"
+            android:layout_width="239dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="DEVELOPERS"
+            android:textColor="#202020"
+            android:textSize="@dimen/navbarItemSize"
+            android:typeface="@{typeface}"
+            app:layout_constraintStart_toStartOf="@+id/sponsors"
+            app:layout_constraintTop_toBottomOf="@+id/sponsors" />
+
+        <TextView
+            android:id="@+id/notifications"
+            android:layout_width="238dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="NOTIFICATIONS"
+            android:textColor="#202020"
+            android:textSize="@dimen/navbarItemSize"
+            android:typeface="@{typeface}"
+            app:layout_constraintStart_toStartOf="@+id/developers"
+            app:layout_constraintTop_toBottomOf="@+id/developers" />
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
+    </LinearLayout>
+
+</FrameLayout>
+</layout>

@@ -2,7 +2,8 @@
 <resources>
     <color name="colorPrimary">@android:color/transparent</color>
     <color name="colorPrimaryDark">@android:color/transparent</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#DA4336</color>
+    <color name="facebook">#3b5998</color>
 
     <color name="eventsBackground">#FFE14A</color>
     <color name="eventsTextColor">#000000</color>

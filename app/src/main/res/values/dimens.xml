@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="inner_item_offset">16dp</dimen>
+    <dimen name="inner_item_height">140dp</dimen>
+
+    <dimen name="dp10">25dp</dimen>
+    <dimen name="dp90">90dp</dimen>
+    <dimen name="dp15">15dp</dimen>
+    <dimen name="social_button_padding">20dp</dimen>
+
+    <dimen name="navbarItemSize">20dp</dimen>
+</resources>

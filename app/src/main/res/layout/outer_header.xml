@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt">
+
+    <data>
+        <variable
+            name="outerData"
+            type="v2015.oasis.pilani.bits.com.home.events.outer.OuterData"/>
+    </data>
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/header_middle"
+        android:layout_width="match_parent"
+        android:layout_height="90dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="36dp"
+            android:text="@{outerData.heading}"
+            android:layout_gravity="center"/>
+    </FrameLayout>
+
+    <View
+        android:id="@+id/header_footer"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/white_corners_bottom" />
+
+</LinearLayout>
+
+</layout>

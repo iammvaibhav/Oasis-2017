@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable name="data"
+            type="v2015.oasis.pilani.bits.com.home.navbar_items.NotificationData"/>
+        <variable
+            name="typeface"
+            type="android.graphics.Typeface"/>
+    </data>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="10dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:gravity="center_horizontal"
+        android:text="@{data.title}"
+        android:typeface="@{typeface}"
+        android:textColor="#202020"
+        android:background="#ffe14a"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="20dp"
+        android:paddingTop="4dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:background="#ffe14a"
+            android:gravity="center_horizontal"
+            android:text="@{data.timeRecieved}"
+            android:textColor="#202020"
+            android:textSize="14dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/white"
+        android:gravity="center_horizontal"
+        android:text="@{data.body}"
+        android:textColor="#202020"
+        android:textSize="16dp"
+        android:layout_marginBottom="20dp"/>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
+</layout>

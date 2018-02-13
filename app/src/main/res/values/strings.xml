@@ -7,6 +7,13 @@
     <string name="years">years</string>
     <string name="asked">asked</string>
     <string name="profile">"'s Profile"</string>
+    <string name="facebook_app_id">359981531115950</string>
+    <string name="fb_login_protocol_scheme">fb359981531115950</string>
+
+    <string name="com_facebook_loginview_log_out_button">Continue with Facebook</string>
+    <string name="com_facebook_loginview_log_in_button">Continue with Facebook</string>
+    <string name="com_facebook_loginview_log_in_button_long">Continue with Facebook</string>
+
 
     <string name="transition_avatar_border" translatable="false">avatar_border</string>
     <string name="transition_card" translatable="false">card</string>

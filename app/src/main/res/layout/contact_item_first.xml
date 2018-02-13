@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="dataItem"
+            type="v2015.oasis.pilani.bits.com.home.navbar_items.ContactData"/>
+        <variable
+            name="typeface"
+            type="android.graphics.Typeface"/>
+    </data>
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="25dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/photo"
+                android:layout_width="120dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:background="@android:color/white"
+                android:gravity="center_horizontal"
+                android:text="@{dataItem.name}"
+                android:typeface="@{typeface}"
+                android:textColor="#202020"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="25dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:background="@android:color/white"
+                android:gravity="center_horizontal"
+                android:text="@{dataItem.department}"
+                android:typeface="@{typeface}"
+                android:textColor="#202020"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:paddingTop="4dp"/>
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:gravity="center_horizontal"
+                android:text="@{dataItem.email}"
+                android:onClick="@{dataItem.emailListener}"
+                android:typeface="@{typeface}"
+                android:textColor="#202020"
+                android:background="#00f5b2"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="20dp"
+                android:paddingTop="4dp" />
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:background="#ffe14a"
+                android:gravity="center_horizontal"
+                android:text="+91 82091 82501"
+                android:typeface="@{typeface}"
+                android:onClick="@{dataItem.phoneListener}"
+                android:textColor="#202020"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="8dp"
+                android:paddingTop="4dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:background="#ffe14a"
+                android:gravity="center_horizontal"
+                android:text="+91 70731 80405"
+                android:typeface="@{typeface}"
+                android:onClick="@{dataItem.phoneListener}"
+                android:textColor="#202020"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:paddingTop="4dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:background="#ffe14a"
+                android:gravity="center_horizontal"
+                android:text="+91 70236 11971"
+                android:typeface="@{typeface}"
+                android:onClick="@{dataItem.phoneListener}"
+                android:textColor="#202020"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:paddingTop="4dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:background="#ffe14a"
+                android:gravity="center_horizontal"
+                android:text="+91 91669 47424"
+                android:typeface="@{typeface}"
+                android:onClick="@{dataItem.phoneListener}"
+                android:textColor="#202020"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:paddingTop="4dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:background="#ffe14a"
+                android:gravity="center_horizontal"
+                android:text="+91 91192 25593"
+                android:typeface="@{typeface}"
+                android:onClick="@{dataItem.phoneListener}"
+                android:textColor="#202020"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:paddingTop="4dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:background="#ffe14a"
+                android:gravity="center_horizontal"
+                android:text="+91 91192 25134"
+                android:typeface="@{typeface}"
+                android:onClick="@{dataItem.phoneListener}"
+                android:textColor="#202020"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:paddingTop="4dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:background="#ffe14a"
+                android:gravity="center_horizontal"
+                android:text="+91 91192 25189"
+                android:typeface="@{typeface}"
+                android:onClick="@{dataItem.phoneListener}"
+                android:textColor="#202020"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:paddingTop="4dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:background="#ffe14a"
+                android:gravity="center_horizontal"
+                android:text="+91 91192 25102"
+                android:typeface="@{typeface}"
+                android:onClick="@{dataItem.phoneListener}"
+                android:textColor="#202020"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:paddingTop="4dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:background="#ffe14a"
+                android:gravity="center_horizontal"
+                android:text="+91 91192 25645"
+                android:typeface="@{typeface}"
+                android:onClick="@{dataItem.phoneListener}"
+                android:textColor="#202020"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:paddingTop="4dp"
+                android:layout_marginBottom="20dp"/>
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</layout>

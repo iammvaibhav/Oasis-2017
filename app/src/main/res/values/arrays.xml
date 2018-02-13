@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="available_buttons">
+        <item>facebook</item>
+        <item>google</item>
+        <item>dropbox</item>
+        <item>flicker</item>
+        <item>foursquare</item>
+        <item>instagram</item>
+        <item>linkedin</item>
+        <item>odnoklassniki</item>
+        <item>pinterest</item>
+        <item>quora</item>
+        <item>tumblr</item>
+        <item>twitter</item>
+        <item>vine</item>
+        <item>vkontakte</item>
+        <item>whatsapp</item>
+        <item>youtube</item>
+    </string-array>
+    <array name="facebook">
+        <item>@color/facebook</item>
+        <item>@drawable/logo_facebook</item>
+    </array>
+</resources>

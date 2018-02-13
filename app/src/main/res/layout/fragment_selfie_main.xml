@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android.support.design="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-7dp"
+            android:backgroundTint="@android:color/white"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/eventsBackground"
+            android:max="100"
+            android:visibility="invisible" />
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                app:layout_scrollFlags="scroll|enterAlways" />
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+        <com.github.clans.fab.FloatingActionMenu
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_margin="20dp">
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#DA4336"
+                android:src="@drawable/ic_contest_fab_icon"
+                fab:fab_label="Camera"
+                fab:fab_size="mini" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/browse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#DA4336"
+                android:src="@drawable/ic_open_in_browser_white_24px"
+                fab:fab_label="Pick From Gallery"
+                fab:fab_size="mini" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/logout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#DA4336"
+                android:src="@drawable/ic_logout"
+                fab:fab_label="Logout"
+                fab:fab_size="mini" />
+
+        </com.github.clans.fab.FloatingActionMenu>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/bottomSheetParent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="0dp"
+            android:padding="0dp"
+            android.support.design:behavior_skipCollapsed="true"
+            app:behavior_hideable="true"
+            app:cardBackgroundColor="@android:color/white"
+            app:cardElevation="24dp"
+            app:layout_behavior="@string/bottom_sheet_behavior"
+            app:layout_collapseMode="none">
+
+            <ImageView
+                android:id="@+id/background"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:padding="16dp"
+                android:src="@drawable/ic_close" />
+            <ImageView
+                android:id="@+id/remove"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="14dp"
+                android:layout_marginLeft="55dp"
+                android:src="@drawable/ic_remove"
+                android:visibility="invisible"/>
+
+            <com.sackcentury.shinebuttonlib.ShineButton
+                android:id="@+id/like"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginRight="14dp"
+                android:src="@android:color/darker_gray"
+                app:allow_random_color="true"
+                app:click_animation_duration="0"
+                app:shine_animation_duration="0"
+                app:btn_color="@android:color/darker_gray"
+                app:btn_fill_color="@android:color/holo_red_light"
+                android:layout_gravity="top|right"
+                app:siShape="@raw/heart" />
+
+            <TextView
+                android:id="@+id/noOfLikes"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_gravity="right|top"
+                android:textStyle="bold"
+                android:text="34"
+                android:layout_marginTop="13dp"
+                android:textColor="#202020"
+                android:layout_marginRight="48dp"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/caption"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="12dp"
+                        android:gravity="center"
+                        android:text="Title"
+                        android:textColor="#202020"
+                        android:textSize="24sp" />
+
+                    <ImageView
+                        android:id="@+id/image"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_margin="16dp" />
+
+                    <TextView
+                        android:id="@+id/description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="16dp"
+                        android:gravity="center"
+                        android:text="Description"
+                        android:textColor="#202020"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </android.support.design.widget.CoordinatorLayout>
+</layout>

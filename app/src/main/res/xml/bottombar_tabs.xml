@@ -1,0 +1,22 @@
+<tabs>
+    <tab
+        id="@+id/tab_my_account"
+        icon="@drawable/ic_profile"
+        title="Profile" />
+    <tab
+        id="@+id/tab_selfie_contest"
+        icon="@drawable/ic_contest"
+        title="Contest" />
+    <tab
+        id="@+id/tab_events"
+        icon="@drawable/ic_events"
+        title="Events" />
+    <tab
+        id="@+id/tab_maps"
+        icon="@drawable/ic_maps"
+        title="Map" />
+    <tab
+        id="@+id/tab_info"
+        icon="@drawable/ic_ongoing"
+        title="Ongoing" />
+</tabs>
