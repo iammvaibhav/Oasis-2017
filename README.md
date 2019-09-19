@@ -1,5 +1,6 @@
 # Oasis 2017
 ![Oasis Banner](https://raw.githubusercontent.com/iammvaibhav/Oasis-2017/master/oasisBanner.png)
+[<img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" width="256">](https://play.google.com/store/apps/details?id=v2015.oasis.pilani.bits.com.home&hl=en)
 
 Oasis—the cultural fest of BITS Pilani—is nothing but 96 hours of unadulterated thrills comprising music, dance, drama, art, quizzes, fashion, and humour. With a footfall of around 5000+ every year, it is the second-largest cultural festival of India. 
 
